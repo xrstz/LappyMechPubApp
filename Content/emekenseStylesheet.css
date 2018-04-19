@@ -1,0 +1,29 @@
+﻿.navbar-brand {
+    padding: 20px;
+    float: left;
+    height: auto;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: #e9e6e6;
+}
+
+
+
+ .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        body {
+            background: white;
+        }
+
+

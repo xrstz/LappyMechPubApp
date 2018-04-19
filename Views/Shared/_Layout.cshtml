@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Laptop Mechanic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
+
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <!--Owl-Carousel-->
+
+    <link href="~/Content/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!--Custom-Main-File-->
+    <link rel="stylesheet" href="~/Content/custom.css">
+
+    <!--Scroll-Animations-Css-->
+    <link rel="stylesheet" href="~/Content/animate.css">
+
+    <!--Mobile-Responsive-->
+    <link rel="stylesheet" href="~/Content/responsive.css">
+    <link rel="stylesheet" href="~/Content/swiper.css">
+
+    <link href="~/Content/emekenseStylesheet.css" rel="stylesheet" />
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100vh !important;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        body {
+            background: white;
+        }
+    </style>
+</head>
+
+
+
+
+<body style="overflow-x: hidden">
+
+
+    <!--Header Navigation & Banner-->
+    <section id="home-section" class="header-bg" style="overflow-x: hidden">
+        <div class="bg-overlay">
+
+            <!--navigation-starts-here-->
+            <nav class="navbar navbar-default animated fadedown">
+                <div class="container-fluid" style="width:100%;padding-right: 0;padding-left:0; background: #24292e;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12  nav-style">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#home-section">Laptop Mechanic</a>
+                                        </div>
+
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li class="active"><a class="" href="#home-section">Home</a></li>
+                                                <li><a href="#services-section">About</a></li>
+                                                @*<li><a href="/Views/Home/Contact.cshtml">Portfolio</a></li>
+                                                    <li><a href="/Views/Home/Index.cshtml">Blog</a></li>*@
+                                                <li><a href="#footer">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!--Banner-starts-from-here-->
+    <section class="" style="overflow-x: hidden">
+        <div class="container-fluid" style="padding: 0">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-style" style="background-image:url('/Images/7.jpg')">
+                                <h1 class="text-white slide-txt animated fadeIn">
+                                    <span style="color: orange"> <b>Laptop repair, any brand any problem.</b></span>
+                                </h1>
+
+                            </div>
+                            <div class="swiper-slide slide-style" style="background-image:url('/Images/111.jpg')">
+                                <h1 class="text-white slide-txt animated fadeIn text-center">
+                                    <span style="color:white">
+                                        <b>
+                                            Advanced Data Recovery from Hard Drives 
+                                            <br>
+                                            and Solid State Drives.
+                                        </b>
+                                    </span>
+                                </h1>
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-white">
+        <div class="container-fluid">
+
+            @RenderBody()
+
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-lt-green">
+                    <div class="content">
+                        <h4 class="num"><span id="count1">15</span></h4>
+                        <hr class="line">
+                        <h4 class="nam">NO. of Repairs</h4>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-lt-green2">
+                    <div class="content">
+                        <h4 class="num"><span id="count2"></span></h4>
+                        <hr class="line">
+                        <h4 class="nam">Repairs</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-lt-green3">
+                    <div class="content">
+                        <h4 class="num"><span id="count3"></span></h4>
+                        <hr class="line">
+                        <h4 class="nam">Staffs</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-lt-green4">
+                    <div class="content">
+                        <h4 class="num">600</h4>
+                        <hr class="line">
+                        <h4 class="nam"> Delivery</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--section-4-Services-->
+    <section id="services-section" class="sectionP60 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 text-center">
+                    <h1 class="dark oB">Who We Are & What We Do</h1>
+                    <div class=" f-space">
+                        <img src="/Images/Fintech.png" class="img-responsive">
+                        <p class="light oR f15b">We are an electronic repair and computer services company that specializes on repairs and data recovery of all types of devices. We offer a full range of services to sort out just any problem you might have, from virus infection, through slow running machines and data loss, right up to your machine not working at all at a very affordable prices.</p>
+
+                        <a class="btn purple-button" style="margin-top: 30px;" href="#services-section">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-4-Services-->
+    <!--section-4-Services-->
+    <section id="services-section" class="sectionP60" style="background: white;margin-bottom: 300px;padding-top: 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 text-center">
+                    @*<span class="purple rB f13">Lorem ipsum dolor sit amet, cons ectetur adipiscing</span>*@
+                    <h1 class="dark oB" style=" max-width: 610px;margin: auto;">
+                        Our Business Services Includes:
+                    </h1>
+                    <div class=" f-space">
+                        <p class="">
+                            File password Recovery. <br />
+                            PC Repairs and Maintenance. <br/>
+
+                            Buy, Sell or Swap your old PC. <br/>
+                            Operating System Deployment and Long term support. <br />
+
+                            Advanced Data Recovery from Hard Drives and Solid State Drives. <br/>
+
+                           
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="footer">
+            <footer class="footer-bg" style="position: fixed;bottom: 0;z-index:-7;width: 100%">
+                <div class=" bg-dark sectionP30 text-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 small-pad">
+                                <img class="img-responsive img-size img-style" src="~/Images/favicon.png" />
+                                <p class="small-txt centered">
+                                   Your one stop shop for your computer repairs.
+                                </p>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 small-pad">
+                                <p style="margin-bottom: 15px" class="centered">
+                                    Location:
+                                </p>
+                                <p class="small-txt centered">
+                                    Block 12, Room 2
+                                    Computer Village, Ikeja, Lagos, Nigeria.
+                                </p>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 small-pad">
+                                <p style="margin-bottom: 15px" class="centered">
+                                    Links:
+                                </p>
+                                <p class="small-txt centered">
+                                    </p><ul style="padding: 0">
+                                        <li class="li">
+                                            <a href="#home-section" class="">Home</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#services-section">About</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#footer">Contact</a>
+                                        </li>
+                                    </ul>
+                                <p></p>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 small-pad">
+                                <p style="margin-bottom: 15px" class="centered">
+                                    Contact:
+                                </p>
+                                <p class="small-txt centered">
+                                    Main: 07066350493, 07068480808
+                                </p>
+
+                           
+                                
+                                <p class="small-txt centered">
+                                    Support and Services: support@lappymechanic.com
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <!--Social-Links-Starts-Here-->
+                            <!--div-- class="col-md-12 col-sm-12 col-xs-12 text-center animated fadeup">
+                              <a class="social" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                              <a class="social" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                              <a class="social" href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+                              <a class="social" href="javascript:void(0);"><i class="fa fa-youtube-play"></i></a>
+                              <a class="social" href="javascript:void(0);"><i class="fa fa-dribbble"></i></a>
+                            </div-->
+                            <!--Copyright-Text-Starts-Here-->
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center copyRight" style="border-top:1px solid white; padding-top: 15px;">
+                                <p class="light2 oR f13">&copy; Copyright | All rights reserved by <a href="javascript:void(0);" class="white">Laptop Mechanic.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </section>
+    <!--section-4-Services-->
+    <!--section-13-Footer-->
+    <!--section-13-Footer-->
+    <!--Javascript-Files-->
+    <!--Google-jQuery-->
+    <script src="/Scripts/jquery-2.1.1.js"></script>
+
+    <!--Bootstrap-->
+    <script src="/Scripts/swiper.min.js"></script>
+
+    <script type="text/javascript" src="/Scripts/bootstrap.js"></script>
+
+    <!--Owl-Carousel-->
+    <script src="/Scripts/owl.carousel.min.js"></script>
+
+    <!--Scroll Animations Js-->
+    <script type="text/javascript" src="/Scripts/waypoint.js"></script>
+    <script type="text/javascript" src="/Scripts/animation.js"></script>
+
+    <!--Counter-->
+    <script src="/Scripts/numscroller-1.0.js"></script>
+
+
+    <!--Common-Javascript-Main-File--->
+    <script src="/Scripts/common.js"></script>
+
+
+    <script>
+
+
+        /*window.onscroll = function ()
+  { */
+
+        /* Counter1 */
+        var a, b;
+        a = 0;
+        b = document.getElementById("count1");
+        setInterval(ticking1, 100);
+        function ticking1() {
+
+            (a >= 15) ? clearInterval(ticking1) : (a = a + 1, b.innerHTML = a);
+            // clearInterval(ticking);
+        }
+        /* counter end */
+
+        /* Counter3 */
+        var c, d;
+        c = 0;
+        d = document.getElementById("count2");
+        setInterval(ticking2, 1000);
+        function ticking2() {
+
+            (c >= 6) ? clearInterval(ticking2) : (c = c + 1, d.innerHTML = c);
+            // clearInterval(ticking);
+        }
+        /* counter end */
+
+        /* Counter1 */
+        var e, f;
+        e = 0;
+        f = document.getElementById("count3");
+        setInterval(ticking3, 20);
+        function ticking3() {
+
+            (e >= 300) ? clearInterval(ticking3) : (e = e + 1, f.innerHTML = ">" + e);
+            // clearInterval(ticking);
+        }
+        /* counter end */
+
+
+
+
+
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+
+            var swiper = new Swiper(".swiper-container", {
+                pagination: ".swiper-pagination",
+                paginationClickable: true,
+                nextButton: ".swiper-button-next",
+                prevButton: ".swiper-button-prev",
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false,
+                effect: "fade",
+                loop: true
+            });
+        });
+    </script>
+
+
+</body>
+</html>
